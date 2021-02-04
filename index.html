@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Clock</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2ad68a81c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+ <main>
+     <div class="time-of-day">
+         <h1 id="greeting">
+             <!-- Greeting Message here! -->
+         </h1>
+     </div>
+
+     <div class="time-of-day current">
+         <p id="clock">
+             <!-- Time goes here -->
+         </p>
+     </div>
+
+     <article class="quote">
+         <p id="quote">
+            <!-- Quote here. -->
+        </p>
+        </article>
+
+
+        <div class="the-time-select">
+         
+                <figure>
+                    <img src="imgs/sun.png" alt="Good Morning!">
+                </figure>
+           
+            <select id="wakeup">
+                <option value="1">1 AM - 2AM</option>  
+                <option value="2">2 AM - 3 AM</option>  
+                <option value="3">3 AM - 4 AM</option>  
+                <option value="4">4 AM - 5 AM</option>  
+                <option value="5">5 AM - 6 AM</option>  
+                <option value="6">6 AM - 7 AM</option>  
+                <option value="7" selected="selected">7 AM - 8 AM</option>  
+                <option value="8">8 AM - 9 AM</option>  
+                <option value="9">9 AM - 10 AM</option>  
+                <option value="10">10 AM - 11 AM</option>  
+                <option value="11">11 AM - 12 PM</option>  
+                <option value="12">12 PM - 1 PM</option>  
+                <option value="13">1 PM - 2 PM</option>  
+                <option value="14">2 PM - 3 PM</option>  
+                <option value="15">3 PM - 4 PM</option>  
+                <option value="16">4 PM - 5 PM</option>  
+                <option value="17">5 PM - 6 PM</option>  
+                <option value="18">6 PM - 7 PM</option>  
+                <option value="19">7 PM - 8 PM</option>  
+                <option value="20">8 PM - 9 PM</option>  
+                <option value="21">9 PM - 10 PM</option>  
+                <option value="22">10 PM - 11 PM</option>  
+                <option value="23">11 PM - 12 AM</option>  
+                <option value="24">12 AM - 1 AM</option>   
+            </select>
+
+
+            <figure>
+                <img src="imgs/mug.png" alt="Self Care!">
+            </figure>
+            <select id="selfcare">
+                <option value="1">1 AM - 2AM</option>  
+                <option value="2">2 AM - 3 AM</option>  
+                <option value="3">3 AM - 4 AM</option>  
+                <option value="4">4 AM - 5 AM</option>  
+                <option value="5">5 AM - 6 AM</option>  
+                <option value="6">6 AM - 7 AM</option>  
+                <option value="7">7 AM - 8 AM</option>  
+                <option value="8">8 AM - 9 AM</option>  
+                <option value="9">9 AM - 10 AM</option>  
+                <option value="10">10 AM - 11 AM</option>  
+                <option value="11">11 AM - 12 PM</option>  
+                <option value="12">12 PM - 1 PM</option>  
+                <option value="13">1 PM - 2 PM</option>  
+                <option value="14" selected="selected">2 PM - 3 PM</option>  
+                <option value="15">3 PM - 4 PM</option>  
+                <option value="16">4 PM - 5 PM</option>  
+                <option value="17">5 PM - 6 PM</option>  
+                <option value="18">6 PM - 7 PM</option>  
+                <option value="19">7 PM - 8 PM</option>  
+                <option value="20">8 PM - 9 PM</option>  
+                <option value="21">9 PM - 10 PM</option>  
+                <option value="22">10 PM - 11 PM</option>  
+                <option value="23">11 PM - 12 AM</option>  
+                <option value="24">12 AM - 1 AM</option> 
+            </select>
+
+
+            <figure>
+                <img src="imgs/moon.png" alt="Calm Evening!">
+            </figure>
+            <select id="goodnight">
+                <option value="1">1 AM - 2AM</option>  
+                <option value="2">2 AM - 3 AM</option>  
+                <option value="3">3 AM - 4 AM</option>  
+                <option value="4">4 AM - 5 AM</option>  
+                <option value="5">5 AM - 6 AM</option>  
+                <option value="6">6 AM - 7 AM</option>  
+                <option value="7">7 AM - 8 AM</option>  
+                <option value="8">8 AM - 9 AM</option>  
+                <option value="9">9 AM - 10 AM</option>  
+                <option value="10">10 AM - 11 AM</option>  
+                <option value="11">11 AM - 12 PM</option>  
+                <option value="12">12 PM - 1 PM</option>  
+                <option value="13">1 PM - 2 PM</option>  
+                <option value="14">2 PM - 3 PM</option>  
+                <option value="15">3 PM - 4 PM</option>  
+                <option value="16">4 PM - 5 PM</option>  
+                <option value="17">5 PM - 6 PM</option>  
+                <option value="18">6 PM - 7 PM</option>  
+                <option value="19">7 PM - 8 PM</option>  
+                <option value="20">8 PM - 9 PM</option>  
+                <option value="21">9 PM - 10 PM</option>  
+                <option value="22" selected="selected">10 PM - 11 PM</option>  
+                <option value="23">11 PM - 12 AM</option>  
+                <option value="24">12 AM - 1 AM</option> 
+            </select>
+        </div>
+
+        <button id="zenBtn">+ Zen Out +</button>
+
+
+ </main>   
+ <footer>
+    <p>&copy; 2020 All Rights Reserved. By <a href="https://github.com/Zmarie">Zinamarie</a>. &verbar; Background images&colon; <a href="https://unsplash.com/">unsplash.com</a> &verbar; Icons&colon; <a href="https://icons8.com/">icons8</a></p>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

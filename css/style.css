@@ -1,0 +1,164 @@
+ :root {
+     --primaryBG: #ffffff;
+     --border: 10px;
+     --primary-fnt-clr: #66665E;
+ }
+ /*------ General ------ */
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+    background-color: #F0EFEB;
+    background-position: center center;
+    background-size: cover;
+    font: 1rem 'Varela', sans-serif;   
+    color: var(--primary-fnt-clr);
+ }
+
+ main {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     margin: 2em auto;
+     max-width: 800px;
+     width: 90%;
+ }
+
+ /*------ Content ------*/
+ .time-of-day {
+     background: var(--primaryBG);
+     border-radius: var(--border);
+     margin-bottom: 1.875em;
+ }
+
+ .time-of-day h1 {
+     font-size: 1.875em;
+     font-weight: normal;
+     letter-spacing: 2px;
+     padding: .313em .625em;
+     text-align: center;
+ }
+
+.current p {
+    color: #A5A58D;
+    font-size: 1.253em;
+    padding: .313em .625em;
+ }
+
+ article {
+    background: var(--primaryBG);
+    border-radius: var(--border);
+    padding: .313em .625em;
+ }
+
+ article p {
+     font-size: 1.125em;
+     font-style: italic;
+     letter-spacing: 1.5px;
+     line-height: 1.8;
+     text-align: center;
+ }
+
+ article p::first-letter {
+     font-size: 1.563em;
+     padding-right: .125em;
+ }
+
+ /*------ Time Select ------*/
+ .the-time-select {
+     background: var(--primaryBG);
+     border-radius: var(--border);
+     margin: 2em auto;
+     padding: .625em;
+     width: 100%;
+ }
+
+ .the-time-select p {
+     color: #A5A58D;
+     font-size: 1.125em;
+     text-align: center;
+ }
+
+ figure img {
+     display: block;
+     height: 40px;
+     margin: 0 auto;
+     width: 40px;
+ }
+
+ select {
+     background: var(--primaryBG);
+     border: 1px dotted #EDDCD2;
+     border-radius: var(--border);
+     color: #A5A58D;
+     margin: 1.25em;
+     padding: 1.5em 5em;
+     width: 90%;
+ }
+
+ button {
+    background: var(--primaryBG);
+    border: 1px dotted #EDDCD2;
+    border-radius: var(--border);
+    color: #A5A58D;
+    font-size: 1.25em;
+    letter-spacing: .313em;
+    margin-bottom: 1.25em;
+    padding: 1.25em 1.563em;
+    text-align: center;
+ }
+
+ footer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: var(--primaryBG);
+     height: 3.125em;
+     flex-basis: 100%;
+     font-style: italic ;
+     color: #A5A58D;
+     margin: -2.188em auto;
+     text-align: center;
+     padding: .625em;
+     line-height: 1.5;
+ }
+
+ footer a {
+     color: #66665E;
+     text-decoration: none;
+     box-shadow: inset 0 -2px 0 #797978;
+     transition: all ease-in-out .2s;
+ }
+
+ footer a:hover {
+    box-shadow: inset 0 -18px 0 #797978;
+    color: #fff;
+ }
+
+
+
+ @media screen and (min-width: 53em) {
+    main {
+        min-height: 100vh;
+    }
+    
+    .the-time-select {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    select {
+       width: 33%;
+       align-self: flex-end;
+       padding: .313em;
+    }
+
+    button {
+        padding: .313em;
+    }
+ }
